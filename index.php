@@ -9,7 +9,6 @@ require_once 'functions/connect.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css" integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css" integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous" />
     <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
@@ -26,7 +25,7 @@ require_once 'functions/connect.php';
           <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
                       <a class="nav-link" href="#">Tornament <span class="sr-only">(current)</span></a>
@@ -60,7 +59,7 @@ require_once 'functions/connect.php';
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-6">
-                        <form class="mt-5">
+                        <form method="post" action="" class="mt-5">
                             <div class="form-group">
                               <label for=""></label>
                               <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="helpId">
