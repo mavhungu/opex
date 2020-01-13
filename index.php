@@ -25,8 +25,11 @@ require_once 'functions/connect.php';
               aria-expanded="false" aria-label="Toggle navigation"></i>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <!--li class="nav-item active">
+                  <li class="nav-item active">
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Tornament <span class="sr-only">(current)</span></a>
                   </li>
                   <!--li class="nav-item">
                       <a class="nav-link" href="#">Link</a>
@@ -55,7 +58,7 @@ require_once 'functions/connect.php';
       </nav>
         <section class="app-form">
             <div class="container-fluid">
-                <div class="row justify-content-center align-items-center text-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-6">
                         <div class="form mt-5">
                             <div class="form-group">
@@ -69,7 +72,7 @@ require_once 'functions/connect.php';
                                 <small id="helpId" class="text-muted"></small>
                               </div>
                               <div class="form-group">
-                                <botton class="btn btn-primary btn-lg" name="login"><i class="fa fa-user"></i> Login</button>
+                                <botton class="btn btn-primary btn-lg" name="login" id="login">Login</button>
                               </div>
                         </div>
                     </div>
