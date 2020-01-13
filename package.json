@@ -1,0 +1,26 @@
+{
+  "name": "ronewa",
+  "version": "1.0.0",
+  "description": "tornament_app",
+  "main": "js/app/js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tornament"
+  ],
+  "author": "ronewa",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "autoprefixer": "^9.7.3",
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.24.4",
+    "sass-loader": "^8.0.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
