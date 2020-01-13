@@ -60,23 +60,25 @@ require_once 'functions/connect.php';
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-6">
-                        <div class="form mt-5">
+                        <form class="mt-5">
                             <div class="form-group">
                               <label for=""></label>
-                              <input type="email" name="email" id="" class="form-control" placeholder="Email" aria-describedby="helpId">
+                              <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="helpId">
                               <small id="helpId" class="text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for=""></label>
-                                <input type="password" name="password" id="" class="form-control" placeholder="Password" aria-describedby="helpId">
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="helpId">
                                 <small id="helpId" class="text-muted"></small>
                               </div>
                               <div class="form-group">
-                                <botton class="btn btn-primary btn-lg" name="login" id="login">Login</button>
+                                <button class="btn btn-primary btn-lg" name="login" id="login">Login</button>
                               </div>
-                        </div>
+                              <?php login();?>
+                        </form>
                     </div>
                 </div>
+                <?php users();?>
             </div>
             
         </section>

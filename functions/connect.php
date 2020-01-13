@@ -1,4 +1,5 @@
 <?php
+
 $con = mysqli_connect("localhost","root","","gctta");
 if(!$con){
     echo "Error in connection";
@@ -7,6 +8,7 @@ if(!$con){
 function Users_login(){
 
     if(isset($_Post['login'])){
+        global $con;
         $email = $_Post['email'];
         $password = $_Post['password'];
 
@@ -14,11 +16,44 @@ function Users_login(){
             echo "Email and username can not be empty";
         }elseif($email && $password != ""){
             $q = mysqli_query($con,"select * from users where email='$password' && password='$password'");
-            if($g){
+            if($q){
                 echo "user is there";
             }
         }
     }
+
+};
+
+function login(){
+    
+    if(isset($_Post['login'])){
+        global $con;
+        $email = $_Post['email'];
+        $password = $_Post['password'];
+
+        if($email && $password == ""){
+            echo "Email and username can not be empty";
+        }elseif($email && $password != ""){
+            $q = mysqli_query($con,"select * from users where email='$password' && password='$password'");
+            if($q){
+                echo "user is there";
+            }
+        }
+    }
+
+};
+
+function users(){
+
+    global $con;
+
+    $q = mysqli_query($con,"select * from users");
+
+    while($row = mysqli_fetch_assoc($q)){
+        $name = $row['user_name'];
+        echo $name;
+    }
+
 
 };
 
