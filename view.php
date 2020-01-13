@@ -57,7 +57,7 @@ Once you arrive at the Tournament Entrance a weekend Wrist band will be issued t
                         <tbody>
                             <tr>
                                 <td colspan="2">STATS % registration until closing</td>
-                                <td></td>
+                                <td><button class="btn btn-dark">7% dynamic</button></td>
                                 <td></td>
                             </tr>
                                 <tr>
@@ -66,11 +66,18 @@ Once you arrive at the Tournament Entrance a weekend Wrist band will be issued t
                                     <td>Space Available</td>
                                     <td>dynamic 189</td>
                                     <td>Space left</td>
-                                    <td>dynamic</td>
+                                    <td class="table-danger">dynamic</td>
                                 </tr>
                         </tbody>
                     </table>
                 </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <button class="btn btn-info">Juniors</button>
+                            <button class="btn btn-dark">Seniors</button>
+                            <button class="btn btn-primary">Add Player</button>
+                        </div>
+                    </div>
                     <div class="row">
                         <table class="table table-responsive table-bordered">
                             <p>Records</p>
