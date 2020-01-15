@@ -73,7 +73,7 @@
 										</nav>
 									</div>
 									<div class="tg-colhalf">
-										<div class="tg-addnav text-center">
+										<div class="tg-addnav1 text-center">
 											<ul>
 												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login">login</a></li>
 											</ul>

@@ -92,7 +92,7 @@
 										</nav>
 									</div>
 									<div class="tg-colhalf">
-										<nav class="tg-addnav">
+										<nav class="tg-addnav1">
 											<ul>
 												<li>
                                                     <a href="javascript().html" data-toggle="modal" data-target="#tg-login"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a>

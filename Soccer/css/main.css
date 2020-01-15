@@ -1241,13 +1241,34 @@ address { font-style: italic; }
 	text-transform:uppercase;
 	font-family:'Oswald', Arial, Helvetica, sans-serif;
 }
+.tg-addnav1{
+	float:right;
+	z-index:22;
+	font-size:16px;
+	line-height:16px;
+	position:relative;
+	text-transform:uppercase;
+	font-family:'Oswald', Arial, Helvetica, sans-serif;
+}
 .tg-addnav ul{
 	float:left;
 	list-style:none;
 	line-height:inherit;
 }
+.tg-addnav1 ul{
+	float:right;
+	list-style:none;
+	line-height:inherit;
+}
 .tg-addnav ul li{
 	float:left;
+	padding:0 17px;
+	position:relative;
+	line-height:inherit;
+	list-style-type:none;
+}
+.tg-addnav1 ul li{
+	float:right;
 	padding:0 17px;
 	position:relative;
 	line-height:inherit;
@@ -1261,8 +1282,22 @@ address { font-style: italic; }
 	content:'';
 	position:absolute;
 }
+.tg-addnav1 > ul > li + li:before{
+	bottom:0;
+	left:0;
+	width:1px;
+	height:1px;
+	content:'';
+	position:absolute;
+}
 .tg-addnav > ul > li > div >a,
 .tg-addnav > ul > li > a{
+	color:#fff;
+	display:block;
+	line-height:inherit;
+}
+.tg-addnav1 > ul > li > div >a,
+.tg-addnav1 > ul > li > a{
 	color:#fff;
 	display:block;
 	line-height:inherit;
