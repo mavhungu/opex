@@ -87,7 +87,6 @@ function tournament(){
         </div>
 _END;
     }
-}
-
+};
 
 ?>

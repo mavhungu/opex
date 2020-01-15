@@ -1,3 +1,17 @@
+<?php
+	require_once '../functions/connect.php';
+	 $id = uniqid();
+	 
+	 function juniors(){
+		 global $con;
+
+		 $q= mysqli_query($con,"select * from junior");
+			while($row = mysqli_fetch_assoc($q)){
+				$id = $row['junior_ac_number'];
+				echo '<option value="">'.$id.'</option>';
+			}
+	 }
+?>
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang="zxx"> <![endif]-->
@@ -40,40 +54,6 @@
 		<!--************************************
 				Mobile Menu Start
 		*************************************-->
-		<!--<div id="tg-navigationm-mobile" class="tg-navigationm-mobile tg-navigation collapse navbar-collapse">
-			<span id="tg-close" class="tg-close fa fa-close"></span>
-			<div class="tg-colhalf">
-                <ul>
-                    <li>
-                        <a href="#">Main</a>
-                        <ul class="tg-dropdown-menu">
-                            <li><a href="index-2.html">home1</a></li>
-                            <li><a href="index2.html">home2</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">team</a>
-                        <ul class="tg-dropdown-menu">
-                            <li><a href="playergrid-v1.html">playergrid-v1</a></li>
-                            <li><a href="playergrid-v2.html">playergrid-v2</a></li>
-                            <li><a href="playerdetail.html">playergrid detail</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="buyticket.html">Buy Tickets</a></li>
-                    <li>
-                        <a href="#">Match Results</a>
-                        <ul class="tg-dropdown-menu">
-                            <li><a href="matchresult.html">match result</a></li>
-                            <li><a href="matchresultdetail.html">match result detail</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="tg-colhalf">
-                    <li><a href="contactus.html">Contact</a></li>
-                </ul>
-            </div>
-		</div>-->
 		<!--************************************
 				Mobile Menu End
 		*************************************-->
@@ -188,13 +168,13 @@
 												<form action="#" method="post" class="tg-commentform help-form" id="tg-commentform">
 													<fieldset>
 														<div class="form-group">
+															<input type="text" required="" value="ACC <?php echo $id ?>" placeholder="Assoc*" class="form-control" name="contact[name]">
+														</div>
+														<div class="form-group">
 															<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
 														</div>
 														<div class="form-group">
 															<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[name]">
-														</div>
-														<div class="form-group">
-															<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[name]">
 														</div>
 														<div class="form-group">
 															<input type="text" required="" placeholder="Club*" class="form-control" name="contact[name]">
@@ -231,14 +211,12 @@
 														<div class="form-group">
 															<div class="tg-select">
 																<select name="paring[type]">
-																	<option value="" disabled selected>Paring*</option>
-																	<option value="ud13b">U13 boys</option>
-																	<option value="ud13g">U13 Girls</option>
-																	<option value="ud15b">U15 Boys</option>
-																	<option value="ud15g">U15 Girls</option>
-																	<option value="ud18b">U18 Boys</option>
-																	<option value="ud18g">U18 Girls</option>
+																<option value="" disabled selected>Double Paring*</option>
+																	<?php 
+																		juniors();
+																	?>
 																</select>
+																	
 															</div>
 														</div>
 															<div class="form-group">
@@ -264,6 +242,9 @@
 												<div class="col-md-12 col-sm-12 col-xs-12">
 													<form action="#" method="post" class="tg-commentform help-form" id="tg-commentform">
 														<fieldset>
+															<div class="form-group">
+																<input type="text" required="" value="ACC <?php echo $id ?>" placeholder="Assoc*" class="form-control" name="contact[name]">
+															</div>
 															<div class="form-group">
 																<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
 															</div>
