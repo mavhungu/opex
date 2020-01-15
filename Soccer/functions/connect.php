@@ -25,22 +25,33 @@ if(!$con){
 
 function login(){
 
-    if(isset($_Post['login'])){
-        global $con;
-        $email = $_Post['email'];
+    if(isset($_Post['submit'])){
+        $email = strtolower($_Post['username']);
         $password = $_Post['password'];
-
-        if($email && $password == ""){
+        if($email =="" || $password ==""){
             echo "Email and username can not be empty";
-        }elseif($email && $password != ""){
-            $q = mysqli_query($con,"select * from users where use_name='$email' && user_pass='$password'");
-            $rr = mysqli_num_row($q);
+        }
+        if($email !="" && $password !=""){
+            global $con;
+            $q = mysqli_query($con,"select * from users where use_name='$email'");
+            /*$rr = mysqli_num_row($q);
             if($rr == 0){
                 echo "Nothing has been found";
-            }
-            if($q){
-                echo "user is there";
-            }
+            }*/
+           while($row = mysqli_fetch_assoc($q)){
+                $db_id = $row['user_id'];
+                $db_password = $row['user_pass'];
+                $db_name = $row['user_name'];
+           }
+           if($email != $db_name && $password != $db_password){
+               header("Location:index.php");
+           }
+           elseif($email === $db_name && $password === $db_password){
+               $_SESSION['user_id'] = $db_id;
+               $_SESSION['user_name'] = $db_name;
+               $_SESSION['user_pass'] = $db_pass;
+            header("Location:users_pages/index-2.html");
+           }
         }
     }
 

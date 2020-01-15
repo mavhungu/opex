@@ -11,7 +11,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Arnold Classic 2019</title>
+	<title>Arnold Classic</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -43,29 +43,6 @@
 		<!--************************************
 				Mobile Menu Start
 		*************************************-->
-		<!--<div id="tg-navigationm-mobile" class="tg-navigationm-mobile tg-navigation collapse navbar-collapse">
-			<span id="tg-close" class="tg-close fa fa-close"></span>
-			<div class="tg-colhalf">
-				<ul>
-					<li class="active"> <!--- class="menu-item-has-children"></!--->
-						<!--a-- href="#">Main</!--a-->
-						<!--ul-- class="tg-dropdown-menu">
-							<li class="active"><a href="index-2.html">home1</a></li>
-							<li><a href="index2.html">home2</a></li>
-						</!--ul-->
-					<!--/li>
-					
-					
-				</ul>
-			</div>
-			<div class="tg-colhalf">
-				<ul>
-
-					<li><a href="contactus.html">Contact</a></li>
-					
-				</ul>
-			</div>
-		</div>-->
 		<!--************************************
 				Mobile Menu End
 		*************************************-->
@@ -99,7 +76,6 @@
 										<div class="tg-addnav text-center">
 											<ul>
 												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login">login</a></li>
-
 											</ul>
 										</div>
 									</div>
@@ -294,6 +270,7 @@
 							</fieldset>
 						</form>
 						<p>Start typing and press Enter to search</p>
+						
 					</div>
 				</div>
 			</div>
@@ -308,19 +285,21 @@
 	<div class="tg-modalbox modal fade" id="tg-login" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="tg-modal-content">
-				<div class="tg-formarea text-center justify-content-center">
+				<div class="tg-formarea1 text-center">
 					<div class="tg-border-heading">
 						<h3>Login</h3>
 					</div>
-					<form class="tg-loginform" method="post">
+					<form class="tg-loginform" method="post" action="index.php">
+						<?php login();?>
 						<fieldset>
+							
 							<div class="form-group">
-								<input type="text" name="userName/email" class="form-control" placeholder="username/email">
+								<input type="text" name="username" class="form-control" placeholder="username">
 							</div>
 							<div class="form-group">
 								<input type="password" name="password" class="form-control" placeholder="password">
 							</div>
-							<div class="form-group">
+							<!--<div class="form-group">
 								<label>
 									<input type="checkbox" value="rememberme" class="checkbox">
 									<em>Remember Me</em>
@@ -329,11 +308,10 @@
 									<em>Forgot Password</em>
 									<i class="fa fa-question-circle"></i>
 								</a>
-							</div>
+							</div>-->
 							<div class="form-group">
-								<button class="tg-btn tg-btn-lg" type="submit">Login Now</button>
+								<button class="tg-btn tg-btn-lg" type="submit" value="login" name="submit">Login Now</button>
 							</div>
-							
 						</fieldset>
 					</form>
 				</div>

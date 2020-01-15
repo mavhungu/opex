@@ -8,9 +8,18 @@
 		 $q= mysqli_query($con,"select * from junior");
 			while($row = mysqli_fetch_assoc($q)){
 				$id = $row['junior_ac_number'];
-				echo '<option value="">'.$id.'</option>';
+				echo '<option value=".$id.">'.$id.'</option>';
 			}
-	 }
+	 };
+	 function seniors(){
+		global $con;
+
+		$q= mysqli_query($con,"select * from senior"); 
+		   while($row = mysqli_fetch_assoc($q)){
+			   $id = $row['junior_ac_number'];
+			   echo '<option value=".$id.">'.$id.'</option>';
+		   }
+	};
 ?>
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
@@ -22,7 +31,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Registration</title>
+	<title>Registration of players</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -165,25 +174,25 @@
 									<div class="tg-contactus tg-haslayout">
 										<div class="row">
 											<div class="col-md-12 col-sm-12 col-xs-12">
-												<form action="#" method="post" class="tg-commentform help-form" id="tg-commentform">
+												<form method="post" action="#" class="tg-commentform help-form" id="tg-commentform">
 													<fieldset>
 														<div class="form-group">
-															<input type="text" required="" value="ACC <?php echo $id ?>" placeholder="Assoc*" class="form-control" name="contact[name]">
+															<input type="text" required=""disabled value="ACC <?php echo $id ?>" placeholder="Ac*" class="form-control" name="contact[ac]">
 														</div>
 														<div class="form-group">
 															<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[name]">
+															<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[surname]">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Club*" class="form-control" name="contact[name]">
+															<input type="text" required="" placeholder="Club*" class="form-control" name="contact[club]">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="id Number*" class="form-control" name="contact[name]">
+															<input type="tel" required="" placeholder="id Number*" class="form-control" name="contact[id_number]">
 														</div>
 														<div class="form-group">
-															<div class="tg-select">
+															<div class="tg-select1">
 																<select name="under[type]">
 																	<option value="" disabled selected>Structure*</option>
 																	<option value="ud13b">U13 boys</option>
@@ -194,8 +203,19 @@
 																	<option value="ud18g">U18 Girls</option>
 																</select>
 															</div>
+															<div class="tg-select1">
+																<select name="under[type]">
+																	<option value="" disabled selected>Double*</option>
+																	<option value="ud13b">U13 boys</option>
+																	<option value="ud13g">U13 Girls</option>
+																	<option value="ud15b">U15 Boys</option>
+																	<option value="ud15g">U15 Girls</option>
+																	<option value="ud18b">U18 Boys</option>
+																	<option value="ud18g">U18 Girls</option>
+																</select>
+															</div>
 														</div>
-														<div class="form-group">
+														<!--<div class="form-group">
 															<div class="tg-select">
 																<select name="doubles[type]">
 																	<option value="" disabled selected>Doubles*</option>
@@ -207,7 +227,7 @@
 																	<option value="ud18g">U18 Girls</option>
 																</select>
 															</div>
-														</div>
+														</div>-->
 														<div class="form-group">
 															<div class="tg-select">
 																<select name="paring[type]">
@@ -224,7 +244,7 @@
 															</div>
 														
 														<div class="form-group">
-															<button type="submit" class="tg-btn submit-now">Save</button>
+															<button type="submit" name="jsubmit" class="tg-btn">Save</button>
 														</div>
 													</fieldset>
 												</form>
@@ -243,26 +263,26 @@
 													<form action="#" method="post" class="tg-commentform help-form" id="tg-commentform">
 														<fieldset>
 															<div class="form-group">
-																<input type="text" required="" value="ACC <?php echo $id ?>" placeholder="Assoc*" class="form-control" name="contact[name]">
+																<input type="text" required=""disabled value="ACC <?php echo $id ?>" placeholder="Ac*" class="form-control" name="contact[ac]">
 															</div>
 															<div class="form-group">
 																<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[name]">
+																<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[surname]">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[name]">
+																<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[assoc]">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Club*" class="form-control" name="contact[name]">
+																<input type="text" required="" placeholder="Club*" class="form-control" name="contact[club]">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Id Number*" class="form-control" name="contact[name]">
+																<input type="text" required="" placeholder="Id Number*" class="form-control" name="contact[id_number]">
 															</div>
 															<div class="form-group">
 																<div class="tg-select">
-																	<select name="paring[type]">
+																	<select name="structure[type]">
 																		<option value="" disabled selected>Structure*</option>
 																		<option value="woman">Women</option>
 																		<option value="man">Man</option>
@@ -273,13 +293,12 @@
 																<div class="tg-select">
 																	<select name="paring[type]">
 																		<option value="" disabled selected>Paring*</option>
-																		<option value="ud13b">U13 boys</option>
-																		<option value="ud13g">U13 Girls</option>
+																			<?php seniors();?>
 																	</select>
 																</div>
 															</div>
 															<div class="form-group">
-																<button type="submit" class="tg-btn submit-now">Save</button>
+																<button type="submit" name="ssubmit" class="tg-btn submit-now">Save</button>
 															</div>
 														</fieldset>
 													</form>

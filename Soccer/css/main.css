@@ -157,6 +157,13 @@ input:focus,
 	position: relative;
 	text-transform:uppercase;
 }
+.tg-select1{
+	width: 50%;
+	float:left;
+	color:#666;
+	position: relative;
+	text-transform:uppercase;
+}
 .tg-select:after{
 	content: '\f107';
 	top: 50%;
@@ -172,7 +179,22 @@ input:focus,
 	text-align: center;
 	font-family: 'FontAwesome';
 }
-.tg-select select {
+.tg-select1:after{
+	content: '\f107';
+	top: 50%;
+	right: 23px;
+	z-index: 2;
+	width: 13px;
+	color: #aeaeae;
+	display: block;
+	font-size: 17px;
+	margin-top: -5px;
+	line-height: 10px;
+	position: absolute;
+	text-align: center;
+	font-family: 'FontAwesome';
+}
+.tg-select select, .tg-select1 select {
 	width: 100%;
 	z-index: 1;
 	color:#666;
@@ -188,9 +210,9 @@ input:focus,
 	-webkit-appearance: none;
 	text-transform:capitalize;
 }
-.tg-select select:focus{ background:#f7f7f7;}
-.tg-select select option{color:#373542;}
-.tg-select select option span{color:#aeaeae;}
+.tg-select select:focus,.tg-select1 select:focus{ background:#f7f7f7;}
+.tg-select select option,.tg-select1 select option{color:#373542;}
+.tg-select select option span,.tg-select1 select option span{color:#aeaeae;}
 /*=======================
 	Custom CheckBox
 =======================*/
@@ -1105,6 +1127,11 @@ address { font-style: italic; }
 .tg-modal-content .tg-formarea {
 	width:60%;
 	float:left;
+	padding:27px 30px 30px;
+}
+.tg-modal-content .tg-formarea1 {
+	width:100%;
+	float:center;
 	padding:27px 30px 30px;
 }
 .tg-logintype{
