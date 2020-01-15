@@ -24,12 +24,14 @@ if(!$con){
 };*/
 
 function login(){
-
+    
     if(isset($_Post['submit'])){
+        echo $email;
         $email = strtolower($_Post['username']);
         $password = $_Post['password'];
-        if($email =="" || $password ==""){
-            echo "Email and username can not be empty";
+        echo $email;
+        /*if($email =="" || $password ==""){
+            $error = "Email and username can not be empty";
         }
         if($email !="" && $password !=""){
             global $con;
@@ -38,7 +40,7 @@ function login(){
             if($rr == 0){
                 echo "Nothing has been found";
             }*/
-           while($row = mysqli_fetch_assoc($q)){
+           /*while($row = mysqli_fetch_assoc($q)){
                 $db_id = $row['user_id'];
                 $db_password = $row['user_pass'];
                 $db_name = $row['user_name'];
@@ -52,7 +54,7 @@ function login(){
                $_SESSION['user_pass'] = $db_pass;
             header("Location:users_pages/index-2.html");
            }
-        }
+        }*/
     }
 
 };

@@ -160,9 +160,6 @@
 					<button class="btn btn-info btn-lg seniors">Senoir</button>
 				</div>
 			</div>
-						
-
-			
 			<section class="tg-main-section tg-paddingbottom-zero tg-haslayout registers">
 				<div class="container">
 					<div class="tg-section-name">

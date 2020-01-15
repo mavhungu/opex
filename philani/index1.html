@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html>
+<title>Tournaments</title>
+<meta charset="UTF-8">
+
+<link rel="shortcut icon" href="../images/crest.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+</style>
+<style>
+    .cse .gsc-search-button input.gsc-search-button-v2,
+    input.gsc-search-button-v2 {
+        height: 26px !important;
+        margin-top: 0 !important;
+        min-width: 13px !important;
+        padding: 5px 26px !important;
+        width: 68px !important;
+    }
+	.gsib_a {
+padding: 0px     !important;
+}
+
+.cse .gsc-control-cse,
+    .gsc-control-cse {
+      background-color:transparent !important;
+    }
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  display:block;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="../league/league.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">League</a>
+    <a href="../clubs/clubs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Clubs</a>
+    <a href="../news/news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">News</a>
+    <a href="index1.html" class="w3-bar-item w3-button w3-padding-large w3-white">Tournaments</a>
+    <a href="../links/links.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Links</a>
+    <a href="../contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+    <a href="https://www.facebook.com/Gauteng-Table-Tennis-874639732880305" target="_blank"><img src="../images/f_logo_RGB-Grey_58.png" alt="Facebook" class="w3-bar-item w3-button w3-image w3-right" style="max-width:66px"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+   <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="../league/league.html" class="w3-bar-item w3-button w3-padding-large">League</a>
+    <a href="../clubs/clubs.html" class="w3-bar-item w3-button w3-padding-large">Clubs</a>
+    <a href="../news/news.html" class="w3-bar-item w3-button w3-padding-large">News</a>
+    
+    <a href="../links/links.html" class="w3-bar-item w3-button w3-padding-large">Links</a>
+    <a href="../contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a> 
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center">
+  <p >&nbsp;</p>
+  <p >&nbsp;</p>
+  
+<h1 class="w3-margin w3-xxxlarge">Tournaments 2019</h1>
+<!-- <div width="100%" style="float:left; margin-left:94%; margin-top:-10%"><img src="../images/coa.jpg" alt="coat of arms" class="w3-border" >-->
+ </div>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+  <div class="w3-panel w3-padding-large w3-card-4 w3-light-grey">
+    <div class="w3-half">
+      <p><strong>Upcoming</strong></p>
+      <p>8th February: Waterfall Singles Open</p>
+      <p><strong>Closed</strong></p>
+	  <p><a href="http://www.playtabletennis.co.za/past-table-tennis-tournament-results/" target="_blank">SAVETTS Open Championship 2019: 19th October</a></p>
+	  <p><a href="../news/2019/nationals.html">SA Open</a></p>
+	  <p><a href="../news/2019/vets.html">SA Para and Veterans Championships: 7-11 August 2019</a></p>
+	  <p>Maccabi Junior Tournament: 28th July </p>
+	  <p><a href="rivonia.pdf" target="_blank">Rivonia Open Tournament: 9 June 2019</a></p>
+      <p><a href="http://www.playtabletennis.co.za/maccabi-open-2019/" target="_blank">Maccabi Senior Open: 17 June 2019 - results</a></p>
+	  <p><a href="http://www.playtabletennis.co.za/the-arnold-classic-2019/" target="_blank">Arnold Classic: 17-19 May 2019 - results</a></p>
+	  <p>Raiders World Table Tennis Day Juniors - <a href="../news/2019/worldTennisDay.html" target="_blank">click to view</a></p>
+	  <p>Northern Cape Schools Table Tennis: 27 April 2019 </p>
+	  <p><a href="../news/2019/Junior-Results.pdf" target="_blank">Gauteng North Junior: 11 May 2019 - results</a></p>
+	 
+	  
+
+    </div>
+    <div class="w3-half w3-content"><img src="WTTC-2020-singles-Open_-8th-February.jpg" alt="wttc singles open" class="w3-image">
+      </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-center">  
+  
+ 
+ <p>© GCTTA All Rights Reserved. Hosted by OPEX Business Solutions (PTY) ltd | http://www.opexsolutions.co.za</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17916081-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+    function id1(){
+        document.getElementById("1f").style.visibility = "visible";
+        document.getElementById("2f").style.visibility = "hidden";
+        document.getElementById("3f").style.visibility = "hidden";
+        document.getElementById("4f").style.visibility = "hidden";
+        document.getElementById("5f").style.visibility = "hidden";
+    };
+    
+    function id2(){
+        document.getElementById("2f").style.visibility = "visible";
+        document.getElementById("1f").style.visibility = "hidden";
+        document.getElementById("3f").style.visibility = "hidden";
+        document.getElementById("4f").style.visibility = "hidden";
+        document.getElementById("5f").style.visibility = "hidden";
+    };
+    
+        function id3(){
+        document.getElementById("3f").style.visibility = "visible";
+        document.getElementById("1f").style.visibility = "hidden";
+        document.getElementById("2f").style.visibility = "hidden";
+        document.getElementById("4f").style.visibility = "hidden";
+        document.getElementById("5f").style.visibility = "hidden";
+    };
+        function id4(){
+        document.getElementById("4f").style.visibility = "visible";
+        document.getElementById("1f").style.visibility = "hidden";
+        document.getElementById("2f").style.visibility = "hidden";
+        document.getElementById("3f").style.visibility = "hidden";
+        document.getElementById("5f").style.visibility = "hidden";
+    };
+    
+        function id5(){
+        document.getElementById("5f").style.visibility = "visible";
+        document.getElementById("1f").style.visibility = "hidden";
+        document.getElementById("2f").style.visibility = "hidden";
+        document.getElementById("3f").style.visibility = "hidden";
+    };
+</script>
+
+<script>
+// function show(flyers){
+//     document.getElementById("id1").style.display = "none";
+//     document.getElementById("id2").style.display = "none";
+//     document.getElementById(flyers).style.display = "block";
+// }               
+ </script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>

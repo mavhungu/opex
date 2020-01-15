@@ -1,0 +1,459 @@
+
+@media screen and ( max-width: 600px ) {
+    #wpadminbar {
+        position: fixed;
+    }
+    .admin-bar .responsive-nav,
+    .admin-bar .responsive-nav.scroll {
+        top: 42px;
+    }
+}
+
+.padding-desc .section{
+    padding-right:  ;
+    padding-left:  ;
+}
+
+@media screen and (max-width: 767px){
+    .padding-mob .section{
+        padding-right:  ;
+        padding-left:  ;
+    }
+}
+
+
+/*BODY*/
+
+body{
+    background-color: #0e0e0e;
+}
+
+
+
+h1,h2,h3,h4,h5
+body{
+    color: #343434;
+}
+
+
+p,
+.simple-banner-wrap .content.active .subtitle{
+    color: #a7a2a2;
+}
+
+
+
+/*MENU*/
+
+/*.left-navigation,*/
+/*.menu-wrapper,*/
+/*.fixed-sidebar-footer{*/
+/*    background-color: *//*;*/
+/*}*/
+
+.left-navigation,
+.menu-wrapper,
+.fixed-sidebar-footer{
+    background-color: #161616;
+}
+
+.border-1,
+.border {
+    border-color: #161616;
+}
+
+.copyright {
+    background-color: #F0F0F0;
+}
+
+.current-portfolio-ancestor > a,
+.copyright-text a{
+    color: white;
+}
+
+
+.menu > .li-nav > .sub-menu > .current-menu-parent > a,
+.nav-link,
+.nav-link:focus,
+.nav-link:visited,
+.nav-link:hover,
+.menu-item .sub-menu li:hover > a,
+.menu-item .sub-menu .nav-link,
+.social,
+.copyright-text{
+    color: #aaa;
+}
+@media (min-width: 992px){
+    .menu-item .sub-menu .nav-link::before{
+        background-color: #aaa;
+    }
+}
+.left-navigation:hover .jspDrag{
+    background-color: #aaa;
+}
+
+.menu > .li-nav.current-menu-ancestor > a,
+.menu > .li-nav.current_page_item > a,
+.menu > .li-nav.current-menu-parent > a,
+.menu > .li-nav > .sub-menu > .current_page_item > a,
+.menu > .li-nav > .sub-menu .sub-menu > .current_page_item > a,
+.social:hover i{
+    color: #AA855D!important;
+}
+
+@media (min-width: 992px) {
+    .menu > .li-nav:hover > a,
+    .menu > .li-nav.current-menu-ancestor:hover > a,
+    .menu > .li-nav.current-menu-parent:hover > a {
+        color: #fff !important;
+    }
+
+    .menu > .li-nav:hover > a{
+        background-color: #AA855D    }
+
+}
+
+
+
+.menu > .li-nav > .sub-menu > .current_page_item > a::before,
+.current-portfolio-ancestor > a,
+.menu > .li-nav > .sub-menu > .current_page_item > a::after{
+    background-color: #AA855D;
+}
+
+.social:hover{
+    border-color: #AA855D;
+}
+
+.brand.logo{
+    background-image: url();
+}
+
+/*TITLE*/
+
+.creative-slider-wrap .creative-content .title,
+.banner-slider-wrap .slider-content .title,
+.simple-banner-wrap .content .title,
+.services-wrap .title,
+.headlines-wrap.style2 .headlines .content .headlines-title,
+.step-services-wrap .char,
+.step-services-wrap .title,
+h6,
+.skill-wrapper .main-title,
+.call-to-action .content-wrap .subtitle,
+.news-item.masonry .bloc-content-wrapper .post-item-link,
+.news-item.classic .bloc-content-wrapper .post-item-link,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-left i,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-right i,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-left i,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-right i,
+.counters-wrapper .counter .number,
+.post-content-wrap .post-banner .post-title,
+.counters-wrapper .counter .title,
+.call-to-action .form-subscribe input:not([type="submit"]),
+.call-to-action .content-wrap .title,
+.wpcf7[role="form"] .title {
+    color: #fff;
+}
+
+
+/*CONTENT*/
+
+.creative-slider-wrap .pagination span,
+.creative-slider-wrap .wrap-arrows > div,
+.creative-slider-wrap .creative-content .subtitle,
+.headlines-wrap.style2 .headlines .content .headlines-subtitle,
+.services-wrap .text,
+.step-services-wrap .text,
+.team-wrap .team-social a,
+.skill-wrapper .skill .label-skill,
+.skill-wrapper .skill .value,
+.gallery-wrap span,
+.portfolio-popup-hidden .filter ul li,
+.wpcf7[role="form"] input:not([type="submit"]),
+.wpcf7[role="form"] textarea,
+.maps-wrapper .contact-info .info-box .title,
+.maps-wrapper .contact-info .info-box h6,
+.maps-wrapper .contact-info .info-box h6:hover,
+.maps-wrapper .contact-info .info-box h6:focus,
+.maps-wrapper .contact-info .info-box h6:visited,
+.maps-wrapper .contact-info .info-box h6:active,
+.maps-wrapper .contact-info .info-box a,
+.maps-wrapper .contact-info .info-box a:active,
+.maps-wrapper .contact-info .info-box a:focus,
+.maps-wrapper .contact-info .info-box a:visited,
+.single-portfolio-item .title,
+.single-portfolio-item .clients,
+.single-portfolio-item .category-portfolio,
+.single-portfolio-item .category-portfolio a,
+.single-portfolio-item .category-portfolio a:active,
+.single-portfolio-item .category-portfolio a:visited,
+.single-portfolio-item .category-portfolio a:focus,
+.single-portfolio-item .share-this .title,
+.single-portfolio-item .share-this span,
+.post-content-wrap .post-banner .meta-info-post span,
+.post-content-wrap .post-banner .meta-info-post a,
+.post-content-wrap .post-category,
+.post-content-wrap .post-category a,
+.post-content-wrap .share-social span,
+blockquote p,
+table a,
+.post-content,
+.pingback,
+.pingback a,
+.main-post-pagination .next-btn a,
+.main-post-pagination .prev-btn a,
+.comments-post input:not([type="submit"]),
+.comments-post textarea,
+.comments-post #cancel-comment-reply-link,
+.comments-post .comments_title,
+.comments-post .com-name,
+.comments-post .com-text p,
+.comments-post .com-text a,
+.comments-post .com-reply a:hover,
+.sidebar-container table th,
+.sidebar-container .widget_rss a.rsswidget,
+.sidebar-container .tagcloud a,
+.textlogo,
+.logged-in-as a,
+.news-item.classic .bloc-content-wrapper .meta-data a:hover,
+.news-item.classic .bloc-content-wrapper .meta-data a:visited,
+.news-item.classic .bloc-content-wrapper .meta-data a:active,
+.news-item.classic .bloc-content-wrapper .meta-data a:focus,
+.news-item.masonry .bloc-content-wrapper .meta-data a:hover,
+.news-item.masonry .bloc-content-wrapper .meta-data a:focus,
+.news-item.masonry .bloc-content-wrapper .meta-data a:visited,
+.news-item.masonry .bloc-content-wrapper .meta-data a:active{
+    color: #aaaaaa;
+}
+
+.post-nav span:not(:first-child):hover,
+.post-nav a:hover{
+    color: #aaaaaa!important;
+}
+
+
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-right:hover,
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-left:hover,
+.single-portfolio-item .category-portfolio a::before,
+.post-content-wrap .post-category a:before,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-left:hover,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-right:hover,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-left:hover,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-right:hover{
+    background-color: #aaaaaa;
+}
+
+.post-content-wrap .post-content ol li,
+.post-content-wrap .post-content ul li,
+.post-content ul,
+.post-content ol,
+.post-content ul ul,
+.post-content ul ol,
+.post-content ol ul,
+.post-content ol ol,
+.comments-post .date,
+.comments-post .com-text ul,
+.comments-post .com-text ol,
+.news-item.classic .bloc-content-wrapper .meta-data span,
+.news-item.classic .bloc-content-wrapper .meta-data a,
+.news-item.classic .bloc-content-wrapper .short_desc,
+.news-item.masonry .bloc-content-wrapper .meta-data span,
+.news-item.masonry .bloc-content-wrapper .meta-data a,
+.news-item.masonry .bloc-content-wrapper .short_desc,
+.sidebar-container .widget-section  ul li,
+.sidebar-container .widget-section ul li a,
+.sidebar-container .widget-section label,
+.sidebar-container .widget-section select,
+.sidebar-container .widget-section option,
+.banner-slider-wrap .slider-content .subtitle,
+.simple-banner-wrap .content.active .subtitle,
+.sidebar-container table td{
+    color: #a7a2a2;
+}
+
+.simple-banner-wrap .content,
+.a-btn i::before,
+.a-btn-left i::after,
+.border-2::before,
+.border-3::before,
+.border-3::after,
+.banner-slider-wrap .slider-content,
+.creative-slider-wrap .wrap-arrows,
+.headlines-wrap,
+.call-to-action .form-subscribe .submit-wrap i::before,
+.team-wrap .team-social,
+.gallery-wrap .item-gallery:hover .img-wrap::before,
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b,
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b,
+.close-popup:before,
+.close-popup:after,
+.popup-wrapper,
+.portfolio-top-nav .a-btn-next i::before,
+.maps-wrapper .contact-info,
+.single-portfolio-item,
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-right,
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-left,
+.single-portfolio-item .single-portfolio-section .thumbnails .image-wrap::before,
+.post-content-wrap,
+.post-content-wrap .post-banner .meta-info-post,
+.comments-post,
+.news-item.classic,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-left,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-right,
+.news-item.classic .bloc-content-wrapper .meta-data,
+.button-play,
+.news-item.masonry,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-left,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-right,
+.news-item.masonry .bloc-content-wrapper .meta-data,
+.sidebar-container,
+.sidebar{
+    background-color: #161616;
+}
+
+
+@media screen and (max-width: 991px){
+    .responsive-nav,
+    .responsive-nav .brand-res,
+    .res-menu{
+        background-color: #161616;
+    }
+
+    
+    .menu-button span,
+    .menu-button span::before,
+    .menu-button span::after{
+        background-color: #aaaaaa;
+    }
+}
+
+
+.a-btn-left,
+.button,
+.button:focus,
+.button:active,
+.button:hover,
+.headlines-wrap.style1 .headlines .content .headlines-title,
+.call-to-action .content-wrap,
+.call-to-action .form-subscribe input[type="submit"],
+.team-wrap .content-wrap .title,
+.team-wrap .content-wrap .subtitle,
+.portfolio-top-nav .a-btn-prev,
+.portfolio-top-nav .a-btn-next,
+.wpcf7[role="form"] input[type="submit"],
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-right:hover,
+.single-portfolio-item .single-portfolio-section .large-sliders .swiper-arrow-left:hover,
+.comments-post input[type="submit"],
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-left:hover,
+.news-item.classic .post-media-wrap.gallery .swiper-arrow-right:hover,
+.button-play,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-left:hover,
+.news-item.masonry .post-media-wrap.gallery .swiper-arrow-right:hover{
+    color: #161616;
+}
+
+.call-to-action .form-subscribe form .mc4wp-response p,
+.post-nav span:not(:first-child),
+.post-nav a{
+    color: #fff!important;
+}
+
+.a-btn i::after,
+.call-to-action .form-subscribe .submit-wrap i::after,
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a,
+.portfolio-top-nav .a-btn-next i::after{
+    border-left: 4px solid #161616;
+}
+
+.a-btn-left i::before,
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a{
+    border-right: 4px solid #161616;
+}
+
+
+.wpcf7[role="form"] textarea:focus,
+.wpcf7[role="form"] input:not([type="submit"]):focus,
+.post-nav span:not(:first-child),
+.post-nav a,
+.comments-post input:not([type="submit"]):focus,
+.comments-post textarea:focus,
+.sidebar-container button{
+    border-color: #AA855D;
+}
+
+
+.call-to-action .form-subscribe .wpcf7[role="form"] input:not([type="submit"]):focus {
+    border-color: #fff;
+}
+
+.team-wrap .team-social a:hover,
+.portfolio .item-gallery .category,
+.portfolio-popup-hidden .filter ul li:hover,
+.maps-wrapper .contact-info .info-box a:hover,
+.single-portfolio-item .category-portfolio a:hover,
+.single-portfolio-item .share-this span:hover,
+.post-content-wrap .post-banner .meta-info-post a:hover,
+.post-content-wrap .post-banner .meta-info-post a:focus,
+.post-content-wrap .post-banner .meta-info-post a:active,
+.post-content-wrap .post-banner .meta-info-post a:visited,
+.post-content-wrap .post-banner .meta-info-post i,
+.post-content-wrap .post-category a:hover,
+.post-content-wrap .post-category a:focus,
+.post-content-wrap .post-category a:active,
+.post-content-wrap .post-category a:visited,
+.post-content-wrap .share-social span:hover,
+table a:hover,
+.pingback a:hover,
+.main-post-pagination .next-btn a:hover,
+.main-post-pagination .prev-btn a:hover,
+.comments-post .com-text a:hover,
+.comments-post .com-reply a,
+.news-item.classic .post_item.sticky .post-item-link::before,
+.news-item.classic .bloc-content-wrapper .meta-data i,
+.news-item.classic .bloc-content-wrapper .post-item-link:hover,
+.news-item.masonry .bloc-content-wrapper .meta-data i,
+.news-item.masonry .bloc-content-wrapper .post-item-link:hover,
+.sidebar-container button:hover,
+.sidebar-container .widget-section ul li a:hover,
+.sidebar-container .tagcloud a:hover,
+.logged-in-as a:hover{
+     color: #AA855D;
+}
+
+.a-btn,
+.a-btn-left,
+.button,
+.step-services-wrap .img-wrap::before,
+.call-to-action .form-subscribe .submit-wrap,
+.team-wrap .content-wrap,
+.close-popup,
+.portfolio-top-nav .a-btn-prev,
+.portfolio-top-nav .a-btn-next,
+.wpcf7[role="form"] input[type="submit"],
+.maps-wrapper .contact-info .info-box .title::after,
+.single-portfolio-item .category-portfolio a:hover::before,
+.post-content-wrap .post-category a:hover::before,
+.post-content-wrap .post-category a:focus::before,
+.post-content-wrap .post-category a:active::before,
+.post-content-wrap .post-category a:visited::before,
+blockquote::before,
+.post-nav span:not(:first-child),
+.post-nav a,
+.comments-post input[type="submit"],
+.button-play,
+.news-item.masonry .post-media-wrap.standart,
+.sidebar-container button{
+    background-color: #AA855D;
+}
+
+.mfp-arrow{
+    background-color: #AA855D!important;
+}
+
+
+
+
+
+
+
