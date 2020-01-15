@@ -137,15 +137,62 @@ require_once '../functions/connect.php';
 		*************************************-->
 		<main id="tg-main" class="tg-main tg-haslayout">
             <div class="form-group text-center select-entries" style="margin-bottom:15px;">
+                <button class="btn btn-info">Junior Entries</button>
                 <button class="btn btn-primary">Junior Doubles</button>
-                <button class="btn btn-info">Seniors Entries</button>
-                <button class="btn btn-dark">Senior Doubles</button>
-                <button class="btn btn-warning">All Entries</button>
+                <button class="btn btn-success">Seniors Entries</button>
+                <button class="btn btn-warning">Senior Doubles</button>
+                <!--<button class="btn btn-warning">All Entries</button>-->
             </div>
-            <div class="container">
-                <div class="row">
+            <div class="container-fluid">
+                <div class="row"style="margin-left:15px; margin-right:15px;">
+                    <div class="Junior Entries">
+                        <div class="table-responsive">
+                        <table class="table table-striped table-condensed table-hover">
+                        <div class="tg-section-heading text-center"><h2>Junior Entries</h2>
+                            <thead>
+                                <tr>
+                                    <th>AC nunumber</th>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Assoc</th>
+                                    <th>Club</th>
+                                    <th>ID Number</th>
+                                    <th>U13 Boys</th>
+                                    <th>U13 Girls</th>
+                                    <th>U15 Boys</th>
+                                    <th>U15 Girls</th>
+                                    <th>U18 Boys</th>
+                                    <th>U18 Girls</th>
+                                    <th>Payment Ref</th>
+                                    <th>Pop</th>
+                                    <th>Approve</th>
+                                    <th>Complete</th>
+
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        </div>
+                            </div>
+                </div>
                     <div class="Junior Doubles">
-                        <table class="table table-responsive table-hovered">
+                        <div class="table-responsive">
+                        <table class="table table-striped table-condensed table-hover">
                         <div class="tg-section-heading text-center"><h2>Junior Doubles</h2>
                             <thead>
                                 <tr>
@@ -173,17 +220,26 @@ require_once '../functions/connect.php';
                                     </tr>
                                 </tbody>
                         </table>
+                        </div>
                     </div>
                     <div class="Seniors Entries">
-                    <table class="table table-responsive table-hovered">
+                    <div class="table-responsive">
+                    <table class="table table-striped table-condensed table-hover">
                     <div class="tg-section-heading text-center"><h2>Seniors Entries</h2>
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Paring</th>
-                                    <th>Surname1</th>
-                                    <th>Surname2</th>
-                                    <th>Team</th>
+                                <th>AC nunumber</th>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Assoc</th>
+                                    <th>Club</th>
+                                    <th>ID Number</th>
+                                    <th>Women</th>
+                                    <th>Mens</th>
+                                    <th>Payment Ref</th>
+                                    <th>Pop</th>
+                                    <th>Approve</th>
+                                    <th>Complete</th>
                                 </tr>
                             </thead>
                                 <tbody>
@@ -204,8 +260,10 @@ require_once '../functions/connect.php';
                                 </tbody>
                         </table>
                     </div>
+                    </div>
                         <div class="Senior Doubles">
-                        <table class="table table-responsive table-hovered">
+                        <div class="table-responsive">
+                        <table class="table table-striped table-condensed table-hover">
                         <div class="tg-section-heading text-center"><h2>Senior Doubles</h2>
                             <thead>
                                 <tr>
@@ -233,38 +291,8 @@ require_once '../functions/connect.php';
                                     </tr>
                                 </tbody>
                         </table>
+</div>
                         </div>
-                            <div class="All Entries">
-                            <table class="table table-responsive table-hovered">
-                            <div class="tg-section-heading text-center"><h2>All Entries</h2>
-                            <thead>
-                                <tr>
-                                    <th>Count</th>
-                                    <th>Paring</th>
-                                    <th>Surname1</th>
-                                    <th>Surname2</th>
-                                    <th>Team</th>
-                                </tr>
-                            </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>w</td>
-                                        <td>a</td>
-                                        <td>e</td>
-                                        <td>t</td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>w</td>
-                                        <td>a</td>
-                                        <td>e</td>
-                                        <td>t</td>
-                                    </tr>
-                                </tbody>
-                        </table>
-                            </div>
-                </div>
             </div>
 		</main>
 		<!--************************************
