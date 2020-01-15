@@ -136,13 +136,136 @@ require_once '../functions/connect.php';
 				Main Start
 		*************************************-->
 		<main id="tg-main" class="tg-main tg-haslayout">
-            <div class="form-group text-center select-entries" style="margin-bottom:10px;">
+            <div class="form-group text-center select-entries" style="margin-bottom:15px;">
                 <button class="btn btn-primary">Junior Doubles</button>
-                <button class="btn btn-info">Entries Seniors</button>
-                <button class="btn btn-dark">SEnior Doubles</button>
+                <button class="btn btn-info">Seniors Entries</button>
+                <button class="btn btn-dark">Senior Doubles</button>
                 <button class="btn btn-warning">All Entries</button>
             </div>
-                <div class=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="Junior Doubles">
+                        <table class="table table-responsive table-hovered">
+                        <div class="tg-section-heading text-center"><h2>Junior Doubles</h2>
+                            <thead>
+                                <tr>
+                                    <th>Count</th>
+                                    <th>Paring</th>
+                                    <th>Surname1</th>
+                                    <th>Surname2</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="Seniors Entries">
+                    <table class="table table-responsive table-hovered">
+                    <div class="tg-section-heading text-center"><h2>Seniors Entries</h2>
+                            <thead>
+                                <tr>
+                                    <th>Count</th>
+                                    <th>Paring</th>
+                                    <th>Surname1</th>
+                                    <th>Surname2</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                        <div class="Senior Doubles">
+                        <table class="table table-responsive table-hovered">
+                        <div class="tg-section-heading text-center"><h2>Senior Doubles</h2>
+                            <thead>
+                                <tr>
+                                    <th>Count</th>
+                                    <th>Paring</th>
+                                    <th>Surname1</th>
+                                    <th>Surname2</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        </div>
+                            <div class="All Entries">
+                            <table class="table table-responsive table-hovered">
+                            <div class="tg-section-heading text-center"><h2>All Entries</h2>
+                            <thead>
+                                <tr>
+                                    <th>Count</th>
+                                    <th>Paring</th>
+                                    <th>Surname1</th>
+                                    <th>Surname2</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>w</td>
+                                        <td>a</td>
+                                        <td>e</td>
+                                        <td>t</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                            </div>
+                </div>
+            </div>
 		</main>
 		<!--************************************
 				Main End
