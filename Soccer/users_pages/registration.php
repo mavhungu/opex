@@ -171,7 +171,8 @@
 									<div class="tg-contactus tg-haslayout">
 										<div class="row">
 											<div class="col-md-12 col-sm-12 col-xs-12">
-												<form method="post" action="#" class="tg-commentform help-form" id="tg-commentform">
+												<form method="post" action="registration.php" class="tg-commentform help-form" id="tg-commentform">
+													<?php junior_adding();?>
 													<fieldset>
 														<div class="form-group">
 															<input type="text" required=""disabled value="ACC <?php echo $id ?>" placeholder="Ac*" class="form-control" name="contact[ac]">
@@ -181,6 +182,9 @@
 														</div>
 														<div class="form-group">
 															<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[surname]">
+														</div>
+														<div class="form-group">
+															<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[assoc]">
 														</div>
 														<div class="form-group">
 															<input type="text" required="" placeholder="Club*" class="form-control" name="contact[club]">
@@ -201,7 +205,7 @@
 																</select>
 															</div>
 															<div class="tg-select1">
-																<select name="under[type]">
+																<select name="under[double]">
 																	<option value="" disabled selected>Double*</option>
 																	<option value="ud13b">U13 boys</option>
 																	<option value="ud13g">U13 Girls</option>
@@ -241,7 +245,7 @@
 															</div>
 														
 														<div class="form-group">
-															<button type="submit" name="jsubmit" class="tg-btn">Save</button>
+															<button type="submit" name="submit" class="tg-btn">Save</button>
 														</div>
 													</fieldset>
 												</form>

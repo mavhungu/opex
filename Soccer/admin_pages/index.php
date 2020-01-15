@@ -167,7 +167,6 @@ require_once '../functions/connect.php';
                                     <th>Pop</th>
                                     <th>Approve</th>
                                     <th>Complete</th>
-
                                 </tr>
                             </thead>
                                 <tbody>
@@ -275,20 +274,7 @@ require_once '../functions/connect.php';
                                 </tr>
                             </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>w</td>
-                                        <td>a</td>
-                                        <td>e</td>
-                                        <td>t</td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>w</td>
-                                        <td>a</td>
-                                        <td>e</td>
-                                        <td>t</td>
-                                    </tr>
+                                    <?php senior_double(); ?>
                                 </tbody>
                         </table>
 </div>

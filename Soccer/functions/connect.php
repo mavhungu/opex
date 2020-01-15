@@ -4,6 +4,10 @@ $con = mysqli_connect("localhost","root","","gctta");
 if(!$con){
     echo "Error in connection";
 };
+
+session_start();
+ob_start();
+
 /*function Users_login(){
 
     if(isset($_Post['login'])){
@@ -55,6 +59,45 @@ function login(){
             header("Location:users_pages/index-2.html");
            }
         }*/
+    }
+
+};
+function junior_adding(){
+    if(isset($_POST['submit'])){
+        global $con;
+
+        $junior_ac_number = $_POST['contact[ac]'];
+        $junior_name = $_POST['contact[name]'];
+        $junior_surname = $_POST['contact[surname]'];
+        $junior_assoc = $_POST['contact[assoc]'];
+        $junior_club = $_POST['contact[club]'];
+        $junior_id_number = $_POST['contact[id_number]'];
+        $junior_under = $_POST['under[type]'];
+        $junior_double = $_POST['under[double]'];
+        $juniour_paring = $_POST['paring[type]'];
+
+        $q = mysqli_query($con,"INSERT INTO junior (junior_ac_number,junior_name,junior_surname,junior_assoc,junior_club,junior_id_number,junior_under,junior_doouble,juniour_paring)
+         VALUES ('$junior_ac_number','$junior_name','$junior_surname','$junior_assoc',' $junior_club','$junior_id_number','$junior_under','$junior_double','$juniour_paring ')");
+         if($q){
+            header("Location:index-2.html");
+            ob_flush();
+         }
+    }
+};
+
+function senior_double(){
+    global $con;
+    $q = mysqli_query($con, "select * from junior");
+    while($row = mysqli_fetch_assoc($q)){
+        $r = $row['juniour_paring'];
+        $rq = $row['juniour_paring'];
+        $re = $row['juniour_paring'];
+        $ra= $row['juniour_paring'];
+        $rs = $row['juniour_paring'];
+
+        echo <<<_END
+        <tr><td> $r </td></tr>
+_END;
     }
 
 };
