@@ -77,26 +77,26 @@ function destroySession(){
 function junior_adding(){
     if(isset($_POST['submit'])){
 
-        $junior_ac_number = $_POST['contact[ac]'];
-        $junior_name = $_POST['contact[name]'];
-        $junior_surname = $_POST['contact[surname]'];
-        $junior_assoc = $_POST['contact[assoc]'];
-        $junior_club = $_POST['contact[club]'];
-        $junior_id_number = $_POST['contact[id_number]'];
-        $junior_under = $_POST['under[type]'];
-        $junior_double = $_POST['under[double]'];
-        $juniour_paring = $_POST['paring[type]'];
+        $junior_ac_number = $_POST['acc'];
+        $junior_name = $_POST['name'];
+        $junior_surname = $_POST['surname'];
+        $junior_assoc = $_POST['assoc'];
+        $junior_club = $_POST['club'];
+        $junior_id_number = $_POST['id_number'];
+        $junior_under = $_POST['under'];
+        $junior_double = $_POST['double'];
+        $junior_paring = $_POST['paring'];
+
+        //echo $junior_paring;
+
         global $con;
 
-        $q = mysqli_query($con,"INSERT INTO junior
-        (junior_ac_number,junior_name,junior_surname,junior_assoc,junior_club,junior_id_number,junior_under,junior_doouble,juniour_paring)
-         VALUES
-         ('$junior_ac_number','$junior_name','$junior_surname','$junior_assoc',' $junior_club','$junior_id_number','$junior_under',
-         '$junior_double','$juniour_paring ')");
-         if($q){
+        $q = mysqli_query($con,"INSERT INTO junior(junior_ac_number,junior_name,junior_surname,junior_assoc,junior_club,junior_id_number,junior_under,junior_double,junior_paring)
+         VALUES('$junior_ac_number','$junior_name','$junior_surname','$junior_assoc',' $junior_club','$junior_id_number','$junior_under','$junior_double','$junior_paring')");
+         /*if($q){
             header("Location:index-2.php");
             ob_flush();
-         }
+         }*/
     }
 };
 

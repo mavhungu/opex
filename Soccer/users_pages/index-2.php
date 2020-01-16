@@ -1,3 +1,8 @@
+<?php
+
+require_once '../functions/connect.php';
+
+?>
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang="zxx"> <![endif]-->
@@ -96,18 +101,21 @@
 									<div class="tg-colhalf">
 										<nav class="tg-addnav1">
 											<ul>
-												<li>
+												<!--<li>
 													<form method="post">
 													<a type="submit" name="logout" href="javascript().html" data-toggle="modal" data-target="#tg-login">
 														<i class="fa fa-sign-out" aria-hidden="true"></i> logout
 													</a>
 													</form>
-												</li>
-												<form method="post">
-													<button type="submit" name="logout" class="btn text-center">
-														<?php logout(); ?> <span class="text-muted text-sm"><i class="fas fa-power-off mr-2"></i> Log out</span>
-													</button>
-												</form>
+												</li>-->
+                                                <li>
+                                                    <a><form method="post">
+                                                        <button type="submit" name="logout" class="btn btn-outline-warning text-center">
+                                                            <?php logout(); ?> <span class="text-muted text-sm"><i class="fas fa-power-off mr-2"></i> Log out</span>
+                                                        </button>
+                                                    </form></a>
+                                                </li>
+
 											</ul>
 										</nav>
 									</div>

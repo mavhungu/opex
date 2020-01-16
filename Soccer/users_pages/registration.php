@@ -8,7 +8,9 @@
 		 $q= mysqli_query($con,"select * from junior");
 			while($row = mysqli_fetch_assoc($q)){
 				$id = $row['junior_ac_number'];
-				echo '<option value=".$id.">'.$id.'</option>';
+				echo <<<_END
+                <option value="$id">$id</option>
+_END;
 			}
 	 };
 	 function seniors(){
@@ -84,7 +86,6 @@
 									<div class="tg-colhalf pull-right">
 										<nav class="tg-addnav">
 											<ul>
-												
 												<li>
 													<a id="tg-btn-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
 												</li>
@@ -156,8 +157,8 @@
 		<main id="tg-main" class="tg-main tg-haslayout">
 			<div class="container">
 				<div class="text-center" style="margin-bottom: 10px" >
-					<button class="btn btn-primary btn-lg juniors">Junoir</button>
-					<button class="btn btn-info btn-lg seniors">Senoir</button>
+					<button class="btn btn-primary juniors">Junoir</button>
+					<button class="btn btn-info seniors">Senoir</button>
 				</div>
 			</div>
 			<section class="tg-main-section tg-paddingbottom-zero tg-haslayout registers">
@@ -174,27 +175,27 @@
 												<form method="post" action="registration.php" class="tg-commentform help-form" id="tg-commentform">
 													<?php junior_adding();?>
 													<fieldset>
-														<div class="form-group">
-															<input type="text" required=""disabled value="ACC <?php echo $id ?>" placeholder="Ac*" class="form-control" name="contact[ac]">
+														<div class="form-group" style="display: none">
+															<input type="text" name="acc" value="ACC<?php echo $id ?>" required=""class="form-control">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
+															<input type="text" required="" placeholder="Name*" class="form-control" name="name">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[surname]">
+															<input type="text" required="" placeholder="Surname*" class="form-control" name="surname">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[assoc]">
+															<input type="text" required="" placeholder="Assoc*" class="form-control" name="assoc">
 														</div>
 														<div class="form-group">
-															<input type="text" required="" placeholder="Club*" class="form-control" name="contact[club]">
+															<input type="text" required="" placeholder="Club*" class="form-control" name="club">
 														</div>
 														<div class="form-group">
-															<input type="tel" required="" placeholder="id Number*" class="form-control" name="contact[id_number]">
+															<input type="tel" required="" placeholder="id Number*" class="form-control" name="id_number">
 														</div>
 														<div class="form-group">
 															<div class="tg-select1">
-																<select name="under[type]">
+																<select name="under">
 																	<option value="" disabled selected>Structure*</option>
 																	<option value="ud13b">U13 boys</option>
 																	<option value="ud13g">U13 Girls</option>
@@ -205,7 +206,7 @@
 																</select>
 															</div>
 															<div class="tg-select1">
-																<select name="under[double]">
+																<select name="double">
 																	<option value="" disabled selected>Double*</option>
 																	<option value="ud13b">U13 boys</option>
 																	<option value="ud13g">U13 Girls</option>
@@ -231,7 +232,7 @@
 														</div>-->
 														<div class="form-group">
 															<div class="tg-select">
-																<select name="paring[type]">
+																<select name="paring">
 																<option value="" disabled selected>Double Paring*</option>
 																	<?php 
 																		juniors();
