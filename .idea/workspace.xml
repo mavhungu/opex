@@ -54,16 +54,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="10" />
-          <entry key="php" value="671" />
-          <entry key="txt" value="164" />
+          <entry key="php" value="711" />
+          <entry key="txt" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="11" />
-          <entry key="PHP" value="667" />
-          <entry key="PLAIN_TEXT" value="164" />
-          <entry key="SQL" value="3" />
+          <entry key="PHP" value="706" />
+          <entry key="PLAIN_TEXT" value="169" />
+          <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,20 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="121" column="43" lean-forward="true" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+            <state relative-caret-position="288">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Soccer/users_pages/registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="304" column="52" lean-forward="true" selection-start-line="304" selection-start-column="52" selection-end-line="304" selection-end-column="52" />
+            <state relative-caret-position="304">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -125,9 +125,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="git status" />
-      <command text="git add ." />
-      <command text="git commit -m &quot;sleeping&quot;" />
       <command text="git push" />
       <command text="git pull" />
       <command text="exit" />
@@ -150,6 +147,9 @@
       <command text="git add ." />
       <command text="git commit -m &quot;fixing insert junior data&quot;" />
       <command text="git push --set-upstream origin 16-centurion" />
+      <command text="git add ." />
+      <command text="git commit -m &quot;fixing insert senior data&quot;" />
+      <command text="git push" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/Soccer/admin_pages/index.php" />
         <option value="$PROJECT_DIR$/Soccer/users_pages/index-2.html" />
         <option value="$PROJECT_DIR$/Soccer/users_pages/index-2.php" />
-        <option value="$PROJECT_DIR$/Soccer/users_pages/registration.php" />
         <option value="$PROJECT_DIR$/Soccer/functions/connect.php" />
+        <option value="$PROJECT_DIR$/Soccer/users_pages/registration.php" />
       </list>
     </option>
   </component>
@@ -249,12 +249,12 @@
       <updated>1579032952086</updated>
       <workItem from="1579032956625" duration="3581000" />
       <workItem from="1579091015358" duration="1933000" />
-      <workItem from="1579189307863" duration="16085000" />
+      <workItem from="1579189307863" duration="18083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21847000" />
+    <option name="totallyTimeSpent" value="23845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1374" height="735" extended-state="0" />
@@ -356,23 +356,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Soccer/users_pages/registration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="304" column="52" lean-forward="true" selection-start-line="304" selection-start-column="52" selection-end-line="304" selection-end-column="52" />
+        <state relative-caret-position="304">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="121" column="43" lean-forward="true" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
         </state>
       </provider>
     </entry>

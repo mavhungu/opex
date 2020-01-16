@@ -101,29 +101,7 @@ function junior_adding(){
     }
 };
 
-function senior_adding(){
-    if(isset($_POST['senior_submit'])){
-        $senior_ac_number = $_POST['acc'];
-        $senior_name = $_POST['name'];
-        $senior_surname = $_POST['surname'];
-        $senior_assoc = $_POST['assoc'];
-        $senior_club = $_POST['club'];
-        $senior_id_number = $_POST['id_number'];
-        $senior_double = $_POST['structure'];
-        $senior_double_paring = $_POST['paring'];
-        $senior_fees = 1;
 
-        global $con;
-        $q = mysqli_query($con,"INSERT INTO senior
-(senior_ac_number,senior_name,senior_surname,senior_assoc,senior_club,senior_id_number,senior_double,senior_double_paring,senior_fee)
-VALUES('$senior_ac_number','$senior_name','$senior_surname','$senior_assoc','$senior_club','$senior_id_number','$senior_double','$senior_double_paring','$senior_fees')");
-
-        if($q){
-            header("Location:index-2.php");
-        }
-
-    }
-};
 
 function senior_double(){
     global $con;

@@ -24,6 +24,32 @@ _END;
 _END;
 		   }
 	};
+
+function senior_adding(){
+    if(isset($_POST['senior_submit'])){
+
+        $senior_ac_number = $_POST['senior_acc'];
+        $senior_name = $_POST['senior_name'];
+        $senior_surname = $_POST['senior_surname'];
+        $senior_assoc = $_POST['senior_assoc'];
+        $senior_club = $_POST['senior_club'];
+        $senior_id_number = $_POST['senior_id_number'];
+        $senior_double = $_POST['senior_structure'];
+        $senior_double_paring = $_POST['senior_paring'];
+        $senior_fees = 1;
+
+        echo $senior_ac_number.' '.$senior_double_paring;
+
+        global $con;
+$q = mysqli_query($con,"INSERT INTO senior(senior_ac_number,senior_name,senior_surname,senior_assoc,senior_club,senior_id_number,senior_double,senior_paring,senior_fee)
+VALUES('$senior_ac_number','$senior_name','$senior_surname','$senior_assoc','$senior_club','$senior_id_number','$senior_double','$senior_double_paring','$senior_fees')");
+
+        if($q){
+            header("Location:index-2.php");
+        }
+
+    }
+};
 ?>
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
@@ -159,6 +185,7 @@ _END;
 		<main id="tg-main" class="tg-main tg-haslayout">
 			<div class="container">
 				<div class="text-center" style="margin-bottom: 10px" >
+                    <?php senior_adding(); ?>
 					<button class="btn btn-primary juniors">Junoir</button>
 					<button class="btn btn-info seniors">Senoir</button>
 				</div>
@@ -270,26 +297,26 @@ _END;
                                                         <?php senior_adding(); ?>
 														<fieldset>
 															<div class="form-group" style="display: none">
-																<input type="text" name="acc" required=""disabled value="ACC<?php echo $id ?>" placeholder="Ac*" class="form-control" >
+																<input type="text" name="senior_acc" required=""value="ACC<?php echo $id ?>" placeholder="Ac*" class="form-control" >
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Name*" class="form-control" name="name">
+																<input type="text" required="" placeholder="Name*" class="form-control" name="senior_name">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Surname*" class="form-control" name="surname">
+																<input type="text" required="" placeholder="Surname*" class="form-control" name="senior_surname">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Assoc*" class="form-control" name="assoc">
+																<input type="text" required="" placeholder="Assoc*" class="form-control" name="senior_assoc">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Club*" class="form-control" name="club">
+																<input type="text" required="" placeholder="Club*" class="form-control" name="senior_club">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Id Number*" class="form-control" name="id_number]">
+																<input type="text" required="" placeholder="Id Number*" class="form-control" name="senior_id_number]">
 															</div>
 															<div class="form-group">
 																<div class="tg-select">
-																	<select name="structure">
+																	<select name="senior_structure">
 																		<option value="" disabled selected>Structure*</option>
 																		<option value="woman">Women</option>
 																		<option value="man">Man</option>
@@ -298,7 +325,7 @@ _END;
 															</div>
 															<div class="form-group">
 																<div class="tg-select">
-																	<select name="paring">
+																	<select name="senior_paring">
 																		<option value="" disabled selected>Paring*</option>
 																			<?php seniors();?>
 																	</select>
