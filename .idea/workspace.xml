@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f87d40a7-3aa6-45d2-9dc2-3ee3b1192647" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soccer/functions/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Soccer/functions/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soccer/users_pages/index-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Soccer/users_pages/index-2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soccer/users_pages/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Soccer/users_pages/registration.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,16 +54,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="10" />
-          <entry key="php" value="335" />
-          <entry key="txt" value="99" />
+          <entry key="php" value="671" />
+          <entry key="txt" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="11" />
-          <entry key="PHP" value="333" />
-          <entry key="PLAIN_TEXT" value="99" />
-          <entry key="SQL" value="1" />
+          <entry key="PHP" value="667" />
+          <entry key="PLAIN_TEXT" value="164" />
+          <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,41 +91,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+            <state relative-caret-position="318">
+              <caret line="121" column="43" lean-forward="true" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Soccer/users_pages/registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="177" column="102" lean-forward="true" selection-start-line="177" selection-start-column="102" selection-end-line="177" selection-end-column="102" />
+            <state relative-caret-position="252">
+              <caret line="304" column="52" lean-forward="true" selection-start-line="304" selection-start-column="52" selection-end-line="304" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Soccer/admin_pages/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2052">
-              <caret selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Soccer/users_pages/index-2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="114" column="65" lean-forward="true" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -142,9 +125,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="git checkout -b 14-centurion" />
-      <command text="git status" />
-      <command text="git push" />
       <command text="git status" />
       <command text="git add ." />
       <command text="git commit -m &quot;sleeping&quot;" />
@@ -167,6 +147,9 @@
       <command text="git commit -m &quot;fixing login and loginout&quot;" />
       <command text="git push" />
       <command text="git checkout -b 16-centurion" />
+      <command text="git add ." />
+      <command text="git commit -m &quot;fixing insert junior data&quot;" />
+      <command text="git push --set-upstream origin 16-centurion" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -183,8 +166,8 @@
         <option value="$PROJECT_DIR$/Soccer/admin_pages/index.php" />
         <option value="$PROJECT_DIR$/Soccer/users_pages/index-2.html" />
         <option value="$PROJECT_DIR$/Soccer/users_pages/index-2.php" />
-        <option value="$PROJECT_DIR$/Soccer/functions/connect.php" />
         <option value="$PROJECT_DIR$/Soccer/users_pages/registration.php" />
+        <option value="$PROJECT_DIR$/Soccer/functions/connect.php" />
       </list>
     </option>
   </component>
@@ -266,12 +249,12 @@
       <updated>1579032952086</updated>
       <workItem from="1579032956625" duration="3581000" />
       <workItem from="1579091015358" duration="1933000" />
-      <workItem from="1579189307863" duration="9546000" />
+      <workItem from="1579189307863" duration="16085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15308000" />
+    <option name="totallyTimeSpent" value="21847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1374" height="735" extended-state="0" />
@@ -292,7 +275,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.108153075" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" visible="true" weight="0.21131447" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3294509" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -366,13 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Soccer/admin_pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2052">
@@ -382,11 +358,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Soccer/users_pages/registration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="177" column="102" lean-forward="true" selection-start-line="177" selection-start-column="102" selection-end-line="177" selection-end-column="102" />
+        <state relative-caret-position="252">
+          <caret line="304" column="52" lean-forward="true" selection-start-line="304" selection-start-column="52" selection-end-line="304" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#6;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Soccer/functions/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="121" column="43" lean-forward="true" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
         </state>
       </provider>
     </entry>

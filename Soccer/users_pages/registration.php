@@ -16,10 +16,12 @@ _END;
 	 function seniors(){
 		global $con;
 
-		$q= mysqli_query($con,"select * from senior"); 
+		$q= mysqli_query($con,"select * from junior");
 		   while($row = mysqli_fetch_assoc($q)){
 			   $id = $row['junior_ac_number'];
-			   echo '<option value=".$id.">'.$id.'</option>';
+               echo <<<_END
+                <option value="$id">$id</option>
+_END;
 		   }
 	};
 ?>
@@ -195,6 +197,7 @@ _END;
 														</div>
 														<div class="form-group">
 															<div class="tg-select1">
+                                                                <input type="text" name="structure" value="100" class="" style="display: none;">
 																<select name="under">
 																	<option value="" disabled selected>Structure*</option>
 																	<option value="ud13b">U13 boys</option>
@@ -206,6 +209,7 @@ _END;
 																</select>
 															</div>
 															<div class="tg-select1">
+                                                                <input type="text" name="structure" value="100" class="" style="display: none;">
 																<select name="double">
 																	<option value="" disabled selected>Double*</option>
 																	<option value="ud13b">U13 boys</option>
@@ -246,7 +250,7 @@ _END;
 															</div>
 														
 														<div class="form-group">
-															<button type="submit" name="submit" class="tg-btn">Save</button>
+															<button type="submit" name="junior_submit" class="tg-btn">Save</button>
 														</div>
 													</fieldset>
 												</form>
@@ -262,29 +266,30 @@ _END;
 										<div class="tg-contactus tg-haslayout">
 											<div class="row">
 												<div class="col-md-12 col-sm-12 col-xs-12">
-													<form action="#" method="post" class="tg-commentform help-form" id="tg-commentform">
+													<form action="registration.php" method="post" class="tg-commentform help-form" id="tg-commentform">
+                                                        <?php senior_adding(); ?>
 														<fieldset>
-															<div class="form-group">
-																<input type="text" required=""disabled value="ACC <?php echo $id ?>" placeholder="Ac*" class="form-control" name="contact[ac]">
+															<div class="form-group" style="display: none">
+																<input type="text" name="acc" required=""disabled value="ACC<?php echo $id ?>" placeholder="Ac*" class="form-control" >
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
+																<input type="text" required="" placeholder="Name*" class="form-control" name="name">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Surname*" class="form-control" name="contact[surname]">
+																<input type="text" required="" placeholder="Surname*" class="form-control" name="surname">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Assoc*" class="form-control" name="contact[assoc]">
+																<input type="text" required="" placeholder="Assoc*" class="form-control" name="assoc">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Club*" class="form-control" name="contact[club]">
+																<input type="text" required="" placeholder="Club*" class="form-control" name="club">
 															</div>
 															<div class="form-group">
-																<input type="text" required="" placeholder="Id Number*" class="form-control" name="contact[id_number]">
+																<input type="text" required="" placeholder="Id Number*" class="form-control" name="id_number]">
 															</div>
 															<div class="form-group">
 																<div class="tg-select">
-																	<select name="structure[type]">
+																	<select name="structure">
 																		<option value="" disabled selected>Structure*</option>
 																		<option value="woman">Women</option>
 																		<option value="man">Man</option>
@@ -293,14 +298,14 @@ _END;
 															</div>
 															<div class="form-group">
 																<div class="tg-select">
-																	<select name="paring[type]">
+																	<select name="paring">
 																		<option value="" disabled selected>Paring*</option>
 																			<?php seniors();?>
 																	</select>
 																</div>
 															</div>
 															<div class="form-group">
-																<button type="submit" name="ssubmit" class="tg-btn submit-now">Save</button>
+																<button type="submit" name="senior_submit" class="tg-btn">Save</button>
 															</div>
 														</fieldset>
 													</form>
