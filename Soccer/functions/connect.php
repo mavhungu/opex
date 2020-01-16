@@ -1,5 +1,4 @@
 <?php
-
 $con = mysqli_connect("localhost","root","","gctta");
 if(!$con){
     echo "Error in connection";
@@ -8,63 +7,75 @@ if(!$con){
 session_start();
 ob_start();
 
-/*function Users_login(){
+function login(){
 
-    if(isset($_Post['login'])){
+    if(isset($_POST['submit'])){
+
+        $email = strtolower($_POST['username']);
+        $password = strtolower($_POST['password']);
         global $con;
-        $email = $_Post['email'];
-        $password = $_Post['password'];
 
-        if($email && $password == ""){
-            echo "Email and username can not be empty";
-        }elseif($email && $password != ""){
-            $q = mysqli_query($con,"select * from users where email='$password' && password='$password'");
-            if($q){
-                echo "user is there";
+        $query = ("SELECT * FROM users WHERE user_name='$email' AND user_pass='$password'");
+        $result = mysqli_query($con,$query);
+
+        $count = mysqli_num_rows($result);
+        if($count == 0){
+            echo "Nothing has been found";
+        }
+
+        while($row = mysqli_fetch_assoc($result)){
+            $id = $row['user_id'];
+            $role = $row['role'];
+            $username = $row['user_name'];
+            $email = $row['user_pass'];
+
+            echo $role;
+
+            switch ($role){
+
+                case 0:
+                    $_SESSION['user_id'] = $id;
+                    $_SESSION['user_name'] = $username;
+                    $_SESSION['role'] = $role;
+                    $_SESSION['user_pass'] = $email;
+                    header('Location:admin_pages/index.php');
+                    ob_end_flush();
+                    break;
+                case 1:
+                    $_SESSION['user_id'] = $id;
+                    $_SESSION['user_name'] = $username;
+                    $_SESSION['role'] = $role;
+                    $_SESSION['user_pass'] = $email;
+                    header('Location:users_pages/index-2.php');
+                    ob_end_flush();
             }
         }
+        $con->close();
     }
+};
 
-};*/
-
-function login(){
-    
-    if(isset($_Post['submit'])){
-        echo $email;
-        $email = strtolower($_Post['username']);
-        $password = $_Post['password'];
-        echo $email;
-        /*if($email =="" || $password ==""){
-            $error = "Email and username can not be empty";
+function logout(){
+    if(isset($_POST['logout'])) {
+        if (isset($_SESSION['user_name'])) {
+            destroySession();
         }
-        if($email !="" && $password !=""){
-            global $con;
-            $q = mysqli_query($con,"select * from users where use_name='$email'");
-            /*$rr = mysqli_num_row($q);
-            if($rr == 0){
-                echo "Nothing has been found";
-            }*/
-           /*while($row = mysqli_fetch_assoc($q)){
-                $db_id = $row['user_id'];
-                $db_password = $row['user_pass'];
-                $db_name = $row['user_name'];
-           }
-           if($email != $db_name && $password != $db_password){
-               header("Location:index.php");
-           }
-           elseif($email === $db_name && $password === $db_password){
-               $_SESSION['user_id'] = $db_id;
-               $_SESSION['user_name'] = $db_name;
-               $_SESSION['user_pass'] = $db_pass;
-            header("Location:users_pages/index-2.html");
-           }
-        }*/
     }
+};
+
+function destroySession(){
+
+    $_SESSION=array();
+
+    if (session_id() != "" || isset($_COOKIE[session_name()]))
+        setcookie(session_name(), '', time()-2592000, '/');
+
+    session_destroy();
+
+    header('Location:../index.php');
 
 };
 function junior_adding(){
     if(isset($_POST['submit'])){
-        global $con;
 
         $junior_ac_number = $_POST['contact[ac]'];
         $junior_name = $_POST['contact[name]'];
@@ -75,11 +86,15 @@ function junior_adding(){
         $junior_under = $_POST['under[type]'];
         $junior_double = $_POST['under[double]'];
         $juniour_paring = $_POST['paring[type]'];
+        global $con;
 
-        $q = mysqli_query($con,"INSERT INTO junior (junior_ac_number,junior_name,junior_surname,junior_assoc,junior_club,junior_id_number,junior_under,junior_doouble,juniour_paring)
-         VALUES ('$junior_ac_number','$junior_name','$junior_surname','$junior_assoc',' $junior_club','$junior_id_number','$junior_under','$junior_double','$juniour_paring ')");
+        $q = mysqli_query($con,"INSERT INTO junior
+        (junior_ac_number,junior_name,junior_surname,junior_assoc,junior_club,junior_id_number,junior_under,junior_doouble,juniour_paring)
+         VALUES
+         ('$junior_ac_number','$junior_name','$junior_surname','$junior_assoc',' $junior_club','$junior_id_number','$junior_under',
+         '$junior_double','$juniour_paring ')");
          if($q){
-            header("Location:index-2.html");
+            header("Location:index-2.php");
             ob_flush();
          }
     }

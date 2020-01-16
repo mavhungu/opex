@@ -79,7 +79,11 @@ require_once '../functions/connect.php';
 												<li>
                                                     <a href="javascript().html" data-toggle="modal" data-target="#tg-login"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a>
                                                 </li>
-												<li>
+                                                <form method="post">
+                                                    <button type="submit" name="logout" class="btn text-center">
+                                                        <?php logout(); ?> <span class="text-muted text-sm"><i class="fas fa-power-off mr-2"></i> Log out</span>
+                                                    </button>
+                                                </form>
 											</ul>
 										</nav>
 									</div>
@@ -122,7 +126,7 @@ require_once '../functions/connect.php';
 				<div class="row">
 					<div class="tg-banner-content tg-haslayout">
 						<div class="tg-pagetitle">
-							<h1>Welcome <?php ?></h1>
+							<h1>Welcome <?php echo $_SESSION['user_name'];?></h1>
 						</div>
 
 					</div>

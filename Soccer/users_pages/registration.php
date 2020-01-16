@@ -110,7 +110,7 @@
 									<i class="fa fa-bars"></i>
 								</button>-->
 								<strong class="tg-logo">
-									<a href="index-2.html"><img src="../images/logo.png" alt="image description"></a>
+									<a href="index-2.php"><img src="../images/logo.png" alt="image description"></a>
 								</strong>
 							</div>
 							<div id="tg-navigation" class="tg-navigation">

@@ -96,10 +96,18 @@
 									<div class="tg-colhalf">
 										<nav class="tg-addnav1">
 											<ul>
-												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a></li>
-												
 												<li>
-											
+													<form method="post">
+													<a type="submit" name="logout" href="javascript().html" data-toggle="modal" data-target="#tg-login">
+														<i class="fa fa-sign-out" aria-hidden="true"></i> logout
+													</a>
+													</form>
+												</li>
+												<form method="post">
+													<button type="submit" name="logout" class="btn text-center">
+														<?php logout(); ?> <span class="text-muted text-sm"><i class="fas fa-power-off mr-2"></i> Log out</span>
+													</button>
+												</form>
 											</ul>
 										</nav>
 									</div>
@@ -112,7 +120,7 @@
 									<i class="fa fa-bars"></i>
 								</button>-->
 								<strong class="tg-logo">
-									<a href="index-2.html"><img src="../images/logo.png" alt="image description"></a>
+									<a href="index-2.php"><img src="../images/logo.png" alt="image description"></a>
 								</strong>
 							</div>
 							<div id="tg-navigation" class="tg-navigation">
@@ -230,7 +238,7 @@
 										<div class="tg-pointtable">
 											<div class="tg-box3">
 												You can register individually or collectively as a group.
-Your registeration will be validated and and email will be sent to you confirming your participation. 
+Your registration will be validated and email will be sent to you confirming your participation.
 Arnold Classic will then issue you a Web ticket to your email.
 Once you arrive at the Tournament Entrance a weekend Wrist band will be issued to you.
 											</div>
